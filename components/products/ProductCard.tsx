@@ -10,7 +10,6 @@ export default function ProductCard({ product }: { product: Product }) {
             href={`/product/${product.id}`}
             className="group block rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:border-primary-light transition-all duration-300 flex flex-col"
         >
-            {/* Image section */}
             <div className="relative w-full aspect-[4/3] bg-neutral-100">
                 {product.thumbnail ? (
                     <Image
@@ -23,12 +22,8 @@ export default function ProductCard({ product }: { product: Product }) {
                 ) : (
                     <div className="h-full w-full bg-neutral-200" />
                 )}
-
-                {/* subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity"></div>
             </div>
 
-            {/* Content section */}
             <div className="flex flex-col flex-1 p-4">
                 <h3 className="text-base font-semibold line-clamp-2 text-neutral-800 group-hover:text-primary transition-colors">
                     {product.title}
@@ -51,7 +46,6 @@ export default function ProductCard({ product }: { product: Product }) {
                     {product.brand} • {product.category}
                 </div>
 
-                {/* CTA Button */}
                 <div className="mt-4">
                     <span className="inline-block bg-primary text-white text-sm font-medium py-2 px-4 rounded-lg text-center w-full group-hover:bg-primary-dark transition-colors">
                         View Details

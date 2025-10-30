@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="bg-neutral-50 text-neutral-900">
         <header className="bg-primary text-white shadow">
           <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <h1 className="text-2xl font-semibold">Jem's PLP</h1>
+            <a href="/"><h1 className="text-2xl font-semibold">Jem's PLP</h1></a>
             <nav>
               <a href="/" className="mr-4 hover:text-accent transition-colors">
                 Products
