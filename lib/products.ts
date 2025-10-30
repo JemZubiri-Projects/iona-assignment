@@ -16,7 +16,7 @@ export type Product = {
 const BASE = 'https://dummyjson.com';
 
 
-export async function fetchProducts(limit = 100): Promise<Product[]> {
+export async function fetchProducts(limit = 200): Promise<Product[]> {
     const res = await fetch(`${BASE}/products?limit=${limit}`, { cache: 'force-cache' });
     if (!res.ok) throw new Error('Failed to fetch products');
     const json = await res.json();

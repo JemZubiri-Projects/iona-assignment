@@ -1,12 +1,10 @@
 import { fetchProducts } from '../lib/products'
-import ProductGrid from '../components/ProductGrid'
-import ProductControls from '../components/ProductControls'
+import ProductGrid from '../components/products/ProductGrid'
+import ProductControls from '../components/products/ProductControls'
 
 
 export default async function Page() {
-  const products = await fetchProducts(100)
-
-
+  const products = await fetchProducts(200)
   return (
     <section>
       <div className="flex items-center justify-between mb-6">

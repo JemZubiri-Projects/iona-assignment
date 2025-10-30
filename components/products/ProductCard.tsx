@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import type { Product } from '../lib/products'
+import type { Product } from '../../lib/products'
 
 export default function ProductCard({ product }: { product: Product }) {
     return (

@@ -2,7 +2,7 @@
 
 
 import React from 'react'
-import type { Product } from '../lib/products'
+import type { Product } from '../../lib/products'
 import ProductCard from './ProductCard'
 
 

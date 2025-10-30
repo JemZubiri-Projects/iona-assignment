@@ -6,10 +6,9 @@ interface Props {
 }
 
 export default async function ProductPage({ params }: Props) {
-    // Next.js 15 — params can be async
-    const { id } = await params
+    // Next.js 15 — params are now async
+    const id = (await params).id
     const product = await fetchProductById(id)
-
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             {/* Image Section */}
