@@ -1,12 +1,14 @@
 
 ## Getting Started
 
-Requirements: 
+# Requirements: 
     Node.js 20.9 or later.
 
-Project creation: 
+# Project creation: 
     npx create-next-app@latest iona-assignment --yes
-Project initialization:
+
+# Project initialization:
     npm install
-Running the app:
+
+# Running the app:
     npm run dev
